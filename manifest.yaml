@@ -1,0 +1,37 @@
+---
+default_target: groups-all
+
+params:
+  project: experimental_lowqa
+  python_version: "$PYTHON_VERSION"
+
+includes:
+  - config/includes/python.yaml
+  - config/includes/license.yaml
+  - config/includes/funding.yaml
+
+templates:
+  - local/templates
+
+compiles:
+  - name: local
+    configs:
+      - local/configs
+    variables:
+      - local/variables
+
+renders:
+  - name: README.md
+    output_dir: "."
+    dependencies:
+      - compiles-local
+      - renders-python_readme_header.md
+      - renders-python_readme_dep_graph.md
+
+groups:
+  - name: all
+    dependencies:
+      - groups-python-no-cli
+      - groups-license
+      - groups-funding
+      - renders-README.md

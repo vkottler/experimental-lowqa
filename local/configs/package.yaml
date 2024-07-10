@@ -1,0 +1,9 @@
+---
+name: experimental-lowqa
+version: "{{major}}.{{minor}}.{{patch}}"
+description: Read the sign.
+requirements:
+  - vcorelib
+dev_requirements:
+  - setuptools-wrapper
+  - types-setuptools
