@@ -40,7 +40,7 @@ jobs:
           cache: pip
 
       - run: pip${{matrix.python-version}} install -e .
-      - run: pip${{matrix.python-version}} install vmklib
+      - run: pip${{matrix.python-version}} install vmklib>=2.0.3
       - run: mk python-editable
 
       - run: mk python-sa-types
@@ -76,7 +76,7 @@ jobs:
 
       - run: |
           mk python-release owner=vkottler \
-                            repo=experimental-lowqa version=0.1.1
+                            repo=experimental-lowqa version=0.1.2
         if: |
           matrix.python-version == '3.12'
           && matrix.system == 'ubuntu-latest'
