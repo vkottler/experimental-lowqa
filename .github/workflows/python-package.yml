@@ -19,6 +19,7 @@ jobs:
     strategy:
       matrix:
         python-version:
+          - "3.10"
           - "3.11"
           - "3.12"
         system:
@@ -38,7 +39,9 @@ jobs:
           python-version: ${{matrix.python-version}}
           cache: pip
 
+      - run: pip${{matrix.python-version}} install -e .
       - run: pip${{matrix.python-version}} install vmklib
+      - run: mk python-editable
 
       - run: mk python-sa-types
 
@@ -73,7 +76,7 @@ jobs:
 
       - run: |
           mk python-release owner=vkottler \
-                            repo=experimental-lowqa version=0.1.0
+                            repo=experimental-lowqa version=0.1.1
         if: |
           matrix.python-version == '3.12'
           && matrix.system == 'ubuntu-latest'
