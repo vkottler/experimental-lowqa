@@ -2,11 +2,11 @@
     =====================================
     generator=datazen
     version=3.1.4
-    hash=280d19d80c6438c0548d2af5c21b34a0
+    hash=e39f63c22ba916bc0277b6273e68e64d
     =====================================
 -->
 
-# experimental-lowqa ([0.1.0](https://pypi.org/project/experimental-lowqa/))
+# experimental-lowqa ([0.1.1](https://pypi.org/project/experimental-lowqa/))
 
 [![python](https://img.shields.io/pypi/pyversions/experimental-lowqa.svg)](https://pypi.org/project/experimental-lowqa/)
 ![Build Status](https://github.com/vkottler/experimental-lowqa/workflows/Python%20Package/badge.svg)
@@ -29,6 +29,7 @@
 
 This package is tested with the following Python minor versions:
 
+* [`python3.10`](https://docs.python.org/3.10/)
 * [`python3.11`](https://docs.python.org/3.11/)
 * [`python3.12`](https://docs.python.org/3.12/)
 
@@ -41,6 +42,9 @@ This package is tested on the following platforms:
 * `windows-latest`
 
 # Introduction
+
+This project does not require 100% unit test coverage for publishing (hence
+the name). **All other typical Python quality assurance is still enforced.**
 
 # Internal Dependency Graph
 
