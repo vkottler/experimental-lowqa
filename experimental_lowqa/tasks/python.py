@@ -43,7 +43,12 @@ class PythonTags(GenerateTags):
         self.extra_source_candidates = copy(type(self).extra_source_candidates)
 
         # Add extra source candidates for other Python projects.
-        for candidate in ["vcorelib", "runtimepy", "svgen"]:
+        for candidate in [
+            "vcorelib",
+            "runtimepy",
+            "svgen",
+            "experimental-lowqa",
+        ]:
             if root.name != candidate:
                 self.extra_source_candidates.append(
                     ("..", candidate, to_slug(candidate))
