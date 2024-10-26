@@ -2,11 +2,11 @@
     =====================================
     generator=datazen
     version=3.1.4
-    hash=9995fcc48da37efc4c2b4667702fd1f9
+    hash=82c7ff5f1198788a93c3f711bb428740
     =====================================
 -->
 
-# experimental-lowqa ([0.1.3](https://pypi.org/project/experimental-lowqa/))
+# experimental-lowqa ([0.1.4](https://pypi.org/project/experimental-lowqa/))
 
 [![python](https://img.shields.io/pypi/pyversions/experimental-lowqa.svg)](https://pypi.org/project/experimental-lowqa/)
 ![Build Status](https://github.com/vkottler/experimental-lowqa/workflows/Python%20Package/badge.svg)
@@ -29,9 +29,8 @@
 
 This package is tested with the following Python minor versions:
 
-* [`python3.10`](https://docs.python.org/3.10/)
-* [`python3.11`](https://docs.python.org/3.11/)
 * [`python3.12`](https://docs.python.org/3.12/)
+* [`python3.13`](https://docs.python.org/3.13/)
 
 ## Platform Support
 
