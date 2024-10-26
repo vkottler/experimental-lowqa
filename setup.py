@@ -1,7 +1,7 @@
 # =====================================
 # generator=datazen
 # version=3.1.4
-# hash=a53787c3d6b80f7872e346b656147959
+# hash=29f345c5b752a50f363dcc12bf1d0576
 # =====================================
 
 """
@@ -19,7 +19,7 @@ from experimental_lowqa import DESCRIPTION, PKG_NAME, VERSION
 
 author_info = {
     "name": "Vaughn Kottler",
-    "email": "vaughnkottler@gmail.com",
+    "email": "vaughn@libre-embedded.com",
     "username": "vkottler",
 }
 pkg_info = {
@@ -28,9 +28,8 @@ pkg_info = {
     "version": VERSION,
     "description": DESCRIPTION,
     "versions": [
-        "3.10",
-        "3.11",
         "3.12",
+        "3.13",
     ],
 }
 setup(
